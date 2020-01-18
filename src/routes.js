@@ -4,10 +4,6 @@ const SearchController = require('./controllers/SearchController')
 
 const routes = Router();
 
-routes.get('/test', (req,res) => {
-  return res.json({message: 'teste'})
-});
-
 routes.get('/devs', DevController.index);
 routes.post('/devs', DevController.store);
 routes.put('/devs/:github_username', DevController.update);
