@@ -19,7 +19,7 @@ module.exports = {
       const techsArray = parseStringAsArray(techs);
       const location = {
         type: 'Point',
-        coordinates: [longitude, latitude]
+        coordinates: [parseInt(longitude), parseInt(latitude)]
       }
 			const dev = await Dev.create({
 				github_username,
